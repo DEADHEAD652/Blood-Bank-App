@@ -1,4 +1,4 @@
-const mongoose = required("mongoose");
+const mongoose = require("mongoose");
 
 const userScheama = new mongoose.Schema(
   {
@@ -40,7 +40,7 @@ const userScheama = new mongoose.Schema(
       required: [true, "email is requiredd"],
       unique: true,
     },
-    email: {
+    password: {
       type: String,
       required: [true, "password is required"],
     },

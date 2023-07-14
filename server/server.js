@@ -17,6 +17,7 @@ app.use(cors())
 app.use(morgan('dev'))
 
 //routes
+app.use('/api/v1/auth',require('./routes/authRoutes'))
 
 const port = process.env.PORT || 5001;
 
